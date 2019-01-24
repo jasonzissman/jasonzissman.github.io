@@ -4,7 +4,7 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-## Follett 2015 - current
+## Follett (2015 - current)
 
 * Acted as development manager for 3-4 concurrent projects and 15-20 team members.
 * Conducted large performance improvement efforts for customer-facing applications.
@@ -13,7 +13,7 @@ permalink: /portfolio/
 * Authored career path "guide" for engineers wishing to advance.
 * Supported department-wide code migration from SVN to Git.
 
-## Zebra 2011 - 2015 
+## Zebra (2011 - 2015)
 
 * Worked on company's first websocket-based device management system.
 * Wrote and deployed printer checkout system for technical support.
