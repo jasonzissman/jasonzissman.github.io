@@ -12,7 +12,7 @@ I started my first day as an _associate design and development engineer_ with a 
 
 I had worked for three years since graduation in random jobs (supermarket, recording studio, major ISP) with increasingly technical roles, always aligning myself towards a job in software development. After years of off-hours learning and making crappy personal websites, I finally had a title with "engineer" in it. 
 
-But I felt totally inept at my new job. I didn't know *Git*. I wasn't familiar with Macs or *iOS development*. Everyone else was busy implementing *Hazelcast* and reading up on *Chef* while I was wasting half a day on a typo in a unit test. I wondered why we weren't writing red/black trees and designing algorithms to traverse mazes all day like in college.
+But I felt totally inept at my new job. I didn't know Git. I wasn't familiar with Macs or iOS development. Everyone else was busy implementing Hazelcast and reading up on Chef while I was [wasting hours on a typo in a unit test](https://jasonzissman.github.io/software/career/development/2019/01/24/when-i-overrode-assertEquals.html){:target="_blank"}. I wondered why we weren't writing red/black trees and designing algorithms to traverse mazes all day like in college.
 
 I felt like I was still a cashier who lied his way into a programming job.
 
