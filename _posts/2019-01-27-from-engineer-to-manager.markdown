@@ -10,7 +10,7 @@ If you are a software developer contemplating a move into management, let me sta
 
 There is a vague notion that most developers hold of what exactly a manager does, and most want nothing to do with it. This includes things like constant meetings, generating weekly reports, and lots of _Excel spreadsheets_. Yuck. Why give up the joy of programming for any of that?
 
-A switch into management entails a lot more than these superficial observations (although there definitely is an inordinate amount of Excel spreadsheets in my life now). It's also a very rewarding career move that forces you to grow in unexpected ways. You can expect the following changes as you transition from grunt to management.
+A switch into management entails a lot more than these superficial observations (although there definitely is an inordinate amount of Excel spreadsheets in my life now). It's also a very rewarding career move that forces you to grow in unexpected ways. You can expect the following changes as you transition from the trenches to management.
 
 _Note: these points are most accurate in a medium-to-large company where you have 10+ developers reporting to you._
 
@@ -36,7 +36,7 @@ I can tell you from firsthand experience that if you try to actively fix every h
 
 ## Change #2: You are Measured by how Well Others Perform
 
-This goes hand-in-hand with the previos point. As you can no longer be the rockstar solving all the defects and implementing all the features, you are also no longer being judged by your personal accomplishments. The nature of your professional portfolio changes, too.
+This goes hand-in-hand with the previous point. As you can no longer be the rockstar solving all the defects and implementing all the features, you can also no longer be judged by your personal accomplishments. The nature of your professional expectations changes.
 
 For example - a developer may put the following on his or her resume:
 * Migrated several projects from SVN to Git
