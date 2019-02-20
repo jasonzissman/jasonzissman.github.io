@@ -32,6 +32,6 @@ So what exactly went wrong? There are a number of items.
 2. Automated acceptance tests need to be more robust.
 3. Unfamiliarity with the code needs to be tackled heads on with targeted, merciless refactors. While this will be painful for the developer who first dives in, ultimtately it will grow the knowledge of our own codebase.
 
-# In Conclusion
+## In Conclusion
 
 As a development organization there is always a tradeoff in between delivering timely and meaningful features and maintaining the state of your applications/codebases. The two are not mutually exclusive; however, they both require time and attention. To let the maintenance of your codebase fall too far behind will directly impact your customers and should be avoided appropriately.
