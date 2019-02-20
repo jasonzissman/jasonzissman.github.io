@@ -8,7 +8,7 @@ published: true
 
 # Or, How to let Technical Debt Ruin Your Day
 
-When I started working at my current employer I was assigned to work on one of the company's newer customer-facing projects. The project was one year old by the time I came around and already had an established technology stack, design, and release process. The other developers working on the project were all the original team and had a very clear picture of how that stack, design, and release processe functioned.
+When I started working at my current employer I was assigned to work on one of the company's newer customer-facing projects. The project was one year old by the time I came around and already had an established technology stack, design, and release process. The other developers working on the project were all the original team and had a very clear picture of how that stack, design, and release processes functioned.
 
 Fast forward 4.5 years. None of the original developers are on the team anymore. The project's architect has moved on to different projects, and a new architect put in place. The development manager has changed roles (full disclosure, I am now the dev manager). Worst of all, the full details of the stack, design, and release process are now much more foreign to the team actively working on the project.
 
@@ -29,7 +29,9 @@ So what exactly went wrong? There are a number of items.
 ## What Can We Do Better
 
 1. Technical debt improvements need to be routinely scheduled. 4 year old versions of a stack should be aggressively updated.
+
 2. Automated acceptance tests need to be more robust.
+
 3. Unfamiliarity with the code needs to be tackled heads on with targeted, merciless refactors. While this will be painful for the developer who first dives in, ultimtately it will grow the knowledge of our own codebase.
 
 ## In Conclusion
