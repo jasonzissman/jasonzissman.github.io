@@ -6,13 +6,11 @@ categories: Software Development
 published: true
 ---
 
-# Accessibile Applications
-
 A growing number of companies are adopting accessibility initiatives for their user-facing applications. The catalyst is often a customer request or changing legal requirements. As more businesses implement a digital interface for their products or services, appropriate considerations must be made for users with impairments to consume that digital interface.
 
 ## The goal
 
-Loosely, *accessibile applications* are ones that can be _fully experienced_ by populations with different degrees of visual, auditory, and motor impairments. The experience does not be identical for all users; however, the same functionality and information should be made available to all users.
+Loosely, *accessible applications* are ones that can be _fully experienced_ by populations with different degrees of visual, auditory, and motor impairments. The experience does not be identical for all users; however, the same functionality and information should be made available to all users.
 
 ## The difficulty
 
@@ -24,9 +22,11 @@ In early 2018, my teams were presented with such a scenario. Several of our appl
 
 The answer to this question requires some reflection. How does a user *experience* a website today? Consider the following:
 
-1. When you view a Google search results page, you don't just see text results. You see a logical organization and a thousand visual cues. Links have a blue color to indicate that can be clicked. Search results titles are bigger than description text. Supplemental information is to the side, while main search results are in the middle. _How could you perceive these same cues if you could not see?_
+- When you view a Google search results page, you don't just see text results. You see a logical organization and a thousand visual cues. Links have a blue color to indicate that can be clicked. Search results titles are bigger than description text. Supplemental information is to the side, while main search results are in the middle. _How could you perceive these same cues if you could not see?_
+![Google Search Results](/assets/images/google-search-results.png)
 
-2. When you make a purchase on Amazon, you don't just click the "buy" button. You filter through categories. You compare items against each other. You add items to a cart. _How would you accomplish these actions if you are physically unable to use a mouse?_
+- When you make a purchase on Amazon, you don't just click the "buy" button. You filter through categories. You compare items against each other. You add items to a cart. You leave reviews on an item. _How would you accomplish these actions if you are physically unable to use a mouse?_
+![Amazon Reviews](/assets/images/amazon-review.png)
 
 An underlying goal of accessibility is to make the *entire experience* of an application available to everyone, including those with limited visual, auditory, or motor abilities. As such, an application could be considered accessible when it meets the following guidelines:
 
@@ -44,7 +44,7 @@ The most salient reason to make your websites accessible include:
 
 1. Increased usage and sales
 2. Greatly enhanced perception of brand
-3. Accessibile designs result in better user experience for users without impairments
+3. Accessible designs result in better user experience for users without impairments
 4. Codebases for accessible applications tend to be easier to develop and test
 5. Your competition is also doing it
 6. Legal requirements (e.g. ADA)
