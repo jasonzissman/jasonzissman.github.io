@@ -5,6 +5,7 @@ window.onload = function() {
     
     var sendNotice = function (status) {
         var currentBay = localStorage.getItem('selectedBay');
+		alert("Now we send an email about bay " + currentBay + " being status " + status);
         var clientId = '415923410838-1tpmhtv1qpr1uhbjs13m24jjr4med9at.apps.googleusercontent.com';
         // var clientSecret = 'evZXcndltCspo6G4Zgp_XKoR';
     
