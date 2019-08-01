@@ -1,34 +1,86 @@
-window.onload = function() {
-    var apiKey = 'AIzaSyDwkMohfFnl99NITL5shWQlE2GscO4F6_g';
-    gapi.client.setApiKey(apiKey);
-    gapi.client.load('gmail', 'v1');
+window.onload = function () {
+
+    var CLIENT_ID = '415923410838-1tpmhtv1qpr1uhbjs13m24jjr4med9at.apps.googleusercontent.com';
+    var SCOPES = ['https://mail.google.com/', 'https://www.googleapis.com/auth/gmail.send'];
+
+    var loadGmailApi = function () {
+        gapi.client.load('gmail', 'v1', function () {
+            console.log("Loaded GMail API");
+        });
+    }
+
+    var handleAuthResult = function (authResult) {
+        if (authResult && !authResult.error) {
+            loadGmailApi();
+        }
+    }
+
+    var token = undefined;
+    var getClientRequestHeaders = function () {
+        if (!token) {
+            token = gapi.auth.getToken();
+        }
+        
+        gapi.auth.setToken({ token: token['access_token'] });
+        var authorization = "Bearer " + token["access_token"];
+        return {
+            "Authorization": authorization,
+            "X-JavaScript-User-Agent": "Google APIs Explorer"
+        };
+    }
+
     
+
+    var sendMessage = function (message) {
+        var headers = getClientRequestHeaders();
+        //var path = "gmail/v1/users/me/messages?key=" + CLIENT_ID;
+        var path = "gmail/v1/users/me/messages/send?key=" + CLIENT_ID;
+        var base64EncodedEmail = btoa(message).replace(/\+/g, '-').replace(/\//g, '_');
+        gapi.client.request({
+            path: path,
+            method: "POST",
+            headers: headers,
+            body: {
+                'raw': base64EncodedEmail
+            }
+        }).then(function (response) {
+            alert("Email sent: " + message);
+        });
+    }
+
+    
+
+    gapi.auth.authorize({
+        client_id: CLIENT_ID,
+        scope: SCOPES,
+        immediate: true
+    }, handleAuthResult);
+
+    var sendEmail = function () {
+        var content = 'HELLO';
+
+        var sender = 'baystatus.zissman@gmail.com';
+        var receiver = 'jason.zissman@gmail.com';
+        var to = 'To: ' + receiver;
+        var from = 'From: ' + sender;
+        var subject = 'Subject: ' + 'HELLO TEST';
+        var contentType = 'Content-Type: text/plain; charset=utf-8';
+        var mime = 'MIME-Version: 1.0';
+
+        var message = "";
+        message += to + "\r\n";
+        message += from + "\r\n";
+        message += subject + "\r\n";
+        message += contentType + "\r\n";
+        message += mime + "\r\n";
+        message += "\r\n" + content;
+
+        sendMessage(message);
+    };
+
     var sendNotice = function (status) {
         var currentBay = localStorage.getItem('selectedBay');
-		alert("Now we send an email about bay " + currentBay + " being status " + status);
-        var clientId = '415923410838-1tpmhtv1qpr1uhbjs13m24jjr4med9at.apps.googleusercontent.com';
-        // var clientSecret = 'evZXcndltCspo6G4Zgp_XKoR';
-    
-        var email = '';
-    
-        var headers = {
-            'To': "jason.zissman@gmail.com",
-            'Subject': "I am testing this new API"
-        };
-        for (var header in headers) {
-            email += header += ": " + headers[header] + "\r\n";
-        }
-    
-        email += "\r\n" + "Hi!!";
-    
-        var sendRequest = gapi.client.gmail.users.messages.send({
-            'userId': 'me',
-            'resource': {
-                'raw': window.btoa(email).replace(/\+/g, '-').replace(/\//g, '_')
-            }
-        });
-    
-        sendRequest.execute();   
+        sendEmail("Bay " + currentBay + " is reporting status '" + status + "'");
     }
 
     document.getElementById("button-green").onclick = function () {
@@ -49,13 +101,13 @@ window.onload = function() {
     document.getElementById("button-checkered").onclick = function () {
         sendNotice("checkered");
     };
-    
+
     var baySelect = document.getElementById("bay-selector");
     baySelect.onchange = function () {
         var selectedBay = baySelect.options[baySelect.selectedIndex].value;
         localStorage.setItem('selectedBay', selectedBay);
     };
-    
+
     var selectedBayFromLocalStorage = localStorage.getItem('selectedBay');
     if (selectedBayFromLocalStorage) {
         baySelect.value = selectedBayFromLocalStorage;
