@@ -6,7 +6,9 @@ categories: Software Development
 published: true
 ---
 
-A growing number of companies are adopting accessibility initiatives for their user-facing applications. The catalyst is often a customer request or changing legal requirements. As more businesses implement a digital interface for their products or services, appropriate considerations must be made for users with impairments to consume that digital interface.
+_This is the first part in a series of blog entries on making web applications accessible._
+
+A growing number of companies are adopting accessibility standards as part of their user-facing applications. The catalyst is often a customer request or changing legal requirements. As more businesses implement a digital interface for their products or services, appropriate considerations must be made for users with impairments to consume that digital interface.
 
 ## The goal
 
@@ -53,4 +55,4 @@ Most importantly, the ethical argument: all users, with or without impairments, 
 
 ## Where do we start?
 
-Over the next blog entries, I will detail the path from the beginning (no support whatsoever!) to complete accessibility compliance. I will cover process change, team education, and specific technical considerations.
+Over the next blog entries, I will detail the path from the beginning (no accessibility support whatsoever) to complete accessibility compliance. I will cover process change, team education, and specific technical considerations.
