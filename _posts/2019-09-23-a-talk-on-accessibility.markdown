@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Video Presentation on Accessible Web Applications"
-date:   2019-05-25 06:27:00 -0600
+date:   2019-09-23 06:27:00 -0600
 categories: Software Development
 published: true
 ---
