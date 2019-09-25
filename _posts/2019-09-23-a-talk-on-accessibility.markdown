@@ -8,6 +8,6 @@ published: true
 
 _This is the third part in a series of blog entries on making web applications accessible._
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n22C3rciw2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Last month I delivered [the following presentation on accessibile web applications.](https://www.youtube.com/watch?v=n22C3rciw2c){:target="_blank"}.
 
-[Here is a video of a presentation that I delivered on accessibile web applications.](https://www.youtube.com/watch?v=n22C3rciw2c){:target="_blank"}.
+<iframe style="margin-left: auto; margin-right:auto;" width="560" height="315" src="https://www.youtube.com/embed/n22C3rciw2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
