@@ -28,4 +28,6 @@ Notice that `r/politics` won by a mile. This week saw public US predential impea
 
 `r/announcements` always seems to be highly gilded. `r/blog` came in third. After this - you see an evening out of data.
 
+[Source code available on Github](https://github.com/jasonzissman/golden-ratio){:target="_blank"}
+
 [Animation created with Flourish](https://public.flourish.studio/visualisation/983347/){:target="_blank"}
