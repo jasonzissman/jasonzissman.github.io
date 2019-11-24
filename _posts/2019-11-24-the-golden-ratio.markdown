@@ -5,7 +5,8 @@ date:   2019-11-24 10:31:00 -0600
 categories: Software Development
 published: true
 ---
-I frequent [Reddit](https://reddit.com) as part of my daily internet routine. I trust the upvote system and the collective knowledge of the large userbase to provide me the freshest news, the most interesting opinons, and the funniest of memes.
+
+I frequent [Reddit](https://reddit.com){:target="_blank"} as part of my daily internet routine. I trust the upvote system and the collective knowledge of the large userbase to provide me the freshest news, the most interesting opinons, and the funniest of memes.
 
 A few years back Reddit introduced the concept of "Reddit Gold". Basically, users could purchase a gold icon from Reddit and award it to any comment or post of their liking. It was used as a means of recognizing users for their high quality content (e.g. very helpful information, or maybe a good joke). If you see gold on a post, it usually means it was valuable to many people and should be read.
 
@@ -27,6 +28,4 @@ Notice that `r/politics` won by a mile. This week saw public US predential impea
 
 `r/announcements` always seems to be highly gilded. `r/blog` came in third. After this - you see an evening out of data.
 
-Animation created with Flourish: https://public.flourish.studio/visualisation/983347/
-
-
+[Animation created with Flourish](https://public.flourish.studio/visualisation/983347/){:target="_blank"}
