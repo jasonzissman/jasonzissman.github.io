@@ -2,7 +2,7 @@
 layout: post
 title:  "GraphQL API Discrepancy"
 date:   2022-03-16 02:34:00 -0600
-categories: Software Development, GraphQL
+categories: Software Development
 published: true
 ---
 
