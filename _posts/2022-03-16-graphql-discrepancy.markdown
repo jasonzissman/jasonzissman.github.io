@@ -14,7 +14,9 @@ System ABC is responsible for managing widgets. The system has a Fetch API (Grap
 
 ![System ABC Architectural Diagram](/assets/images/system-abc-diagram.png)
 
-Users routinely invoke the Create API to create records with tags successfully. Tens of thousands of records with tags already exist with tags; however, users report they are unable to retrieve a record's "tags" from the Fetch API. They are also unable to filter based on a record's "tags" in the Fetch API. In both cases, the API returns an error indicating that the GraphQL request is malformed. This means the existing tags are valuable but clients have no way to fetch them.
+Users routinely invoke the Create API to create records with tags successfully. Tens of thousands of records with tags already exist with tags; however, users report they are unable to retrieve a record's tags or filter on tags in the Fetch API. In both cases, the API returns an error indicating that the GraphQL request is malformed since the provided tag is unrecognized. 
+
+This means tags can be created but clients have no way to fetch them.
 
 Schema Definition:
 
