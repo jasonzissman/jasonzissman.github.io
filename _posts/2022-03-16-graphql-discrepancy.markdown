@@ -62,21 +62,21 @@ GraphQL does not support open-ended schema definitions like maps of strings to s
 - The Fetch API and Create API use different technologies (GraphQL vs REST) which apply schema rules differently.
 - There is a slow feedback loop in between schema definition and first schema usage (by test or by real client).
 
-### 3. Brainstorm Solutions
+### 3. Brainstorm Potential Solutions
 
 - Programmatically seed map keys to GraphQL on API startup
 - Pull in third party library (graphql-type-json)
-- Change the schema to be array instead of map
+- Changed schema.tags from map to array of strings (<<< **winner**)
 
 ### 4. Apply Changes
 
 - Changed schema.tags from map to array of strings
-- Reformatted existing data from map into array following name=value format
+- Reformatted existing records' tags from maps to string arrays (following name=value format)
 - Designed integration tests which tested all fields in a schema
 - Recommended GraphQL for Create API (future effort)
 
 ## Impact
  
-- New user able to fetch/filter tags as required
+- New users able to fetch/filter tags as required
 - Existing records can be queried/filtered via existing tags 
 - Faster schema feedback loop reduces chances of similar problems happening again
