@@ -1,10 +1,15 @@
 ---
 layout: post
 title:  "GraphQL API Discrepancy"
-date:   2022-03-16 02:34:00 -0600
+date:   2022-03-16 14:34:00 -0600
 categories: Software Development
 published: true
 ---
+
+## Hi Misha or Others
+Excuse the subversive message. In case you are viewing this document in preparation for our meeting, I'd like to redirect you to this potentially more relevant (and definitely more fun) project that I worked on: https://github.com/jasonzissman/flash-cards. I think this will be a better basis for a full stack development discussion. Thanks!
+
+## GraphQL Discrepancy
 
 This is a situation behavior impact (SBI) review of a technical problem that I recently encountered working on a web application.
 
