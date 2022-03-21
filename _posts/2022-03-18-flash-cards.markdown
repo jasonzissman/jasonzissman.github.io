@@ -10,7 +10,7 @@ A couple of years ago I wrote **JZ Flash Cards** - a web-based mathematics game 
 
 ## Source Code and Technical Details
 
-https://github.com/jasonzissman/flash-cards
+The project source code and documentation [can be found on GitHub](https://github.com/jasonzissman/flash-cards).
 
 ## How to Play a Game
 
