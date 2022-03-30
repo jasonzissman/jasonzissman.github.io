@@ -44,7 +44,7 @@ The beauty of a graph-based solution is that the relationships between goals and
 
 We can use this approach to quickly and efficiently find all goals whose criteria is completely fulfilled by a received event. Here are goals and criteria visualized in Neo4j:
 
-![Visualized Goal and Criteria Graph](/assets/images/2019-11-24/graph.png)
+![Visualized Goal and Criteria Graph](/assets/images/graph.png)
 
 ## Next Steps
 
