@@ -22,10 +22,10 @@ This design created a robust feature set:
 
 An integral part of this flow was for the gamification engine to accurately and quickly determine when an incoming event fulfilled criteria for an existing goal. When presented with an irrelevant event, the engine had to discard it as quickly as possible in order to not hog resources. 
 
-I designed multiple algorithms (which I will not detail here) that all faced the same two concerns:
+I designed multiple algorithms relying on either database queries (Mongo) or custom in-code (JavaScript) lookup constructs. Each attempt to solve this problem faced the same two concerns:
 
-1. The algorithms had many implicit couplings that made the code hard to maintain (e.g. disparate sections call sort() and would break if done out of order)
-2. The algorithms were not efficient as usage increased
+1. The algorithms were not efficient as the number of goals/criteria/events increased
+2. The algorithms had many implicit couplings that made the code hard to maintain (e.g. disparate sections call sort() and would break if done out of order)
 
 ## A Different Approach
 
@@ -50,7 +50,8 @@ We can use this approach to quickly and efficiently find all goals whose criteri
 
 So, a graph representation of the data should lead to a suitable 
 
-- Compare/constrast on an in-memory graph solution or delegation to a GraphDB.
+- Compare/constrast on an in-memory graph solution or delegation to a GraphDB
+- Determine the big-O resource consumption as different parameters increase
 - Performance test the solution
 
 ## Sample Neo4j Commands
