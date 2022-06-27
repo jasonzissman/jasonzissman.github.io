@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Data Monolith vs. Data Microservices"
+date:   2022-06-27 06:23:00 -0600
+categories: Software Development
+published: false
+---
+
+The design debate of "monoliths vs microservices" has existed for some time. Current trends aside, both styles can be a valid design choice for  applications given the right circumstances. I have personally seen both methods be successful and unsuccessful in professional settings.
+
+Typically, the "monolith vs microservices" conversation is used to describe the distribution of the components that enable the application's features. For example, a monolithic library catalog application may have book entry (REST API), book checkout (REST API), book searching (search index), reporting capabilities, and a UI all hosted from the same application server. Conversely, a microservices design would use different tools to host each of those needs seperately.
+
+Upon revisiting [Data-Intensive Applications by Kleppmann](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321), I drew a parallel in between the idea of an application monolith and the idea of a data monolith. A recent design decision at my previous employer 
+
+- data storage
+- search index
+- relationship generation and access
+- realtime messaging
+- report generation
